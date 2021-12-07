@@ -1,0 +1,2112 @@
+[
+  [
+    {
+      "speed": 15,
+      "bort_number": 3207,
+      "data": {
+        "type": "trol",
+        "number": "24",
+        "description": "602-й микрорайон - м.\"Барабашова\"-пос.",
+        "length": 4.42999982833862,
+        "bort_number": 3207,
+        "handicapped": true,
+        "gps_id": 353976014322329,
+        "lng": 36.34112,
+        "lat": 49.99652,
+        "speed": 15,
+        "timestamp": 1637852830,
+        "bearing": 88,
+        "odometr": 46589
+      }
+    },
+    {
+      "speed": 18,
+      "bort_number": 3225,
+      "data": {
+        "type": "trol",
+        "number": "24",
+        "description": "602-й микрорайон - м.\"Барабашова\"-пос.",
+        "length": 4.42999982833862,
+        "bort_number": 3225,
+        "handicapped": true,
+        "gps_id": 353976014321545,
+        "lng": 36.34121,
+        "lat": 49.99651,
+        "speed": 18,
+        "timestamp": 1637853015,
+        "bearing": 90,
+        "odometr": 405709
+      }
+    },
+    {
+      "speed": 11,
+      "bort_number": 3222,
+      "data": {
+        "type": "trol",
+        "number": "24",
+        "description": "602-й микрорайон - м.\"Барабашова\"-пос.",
+        "length": 4.42999982833862,
+        "bort_number": 3222,
+        "handicapped": true,
+        "gps_id": 359632104967705,
+        "lng": 36.30403,
+        "lat": 50.00193,
+        "speed": 11,
+        "timestamp": 1637852977,
+        "bearing": 94,
+        "odometr": 109081
+      }
+    },
+    {
+      "speed": 1,
+      "bort_number": 3224,
+      "data": {
+        "type": "trol",
+        "number": "24",
+        "description": "602-й микрорайон - м.\"Барабашова\"-пос.",
+        "length": 4.42999982833862,
+        "bort_number": 3224,
+        "handicapped": true,
+        "gps_id": 353976014244226,
+        "lng": 36.32649,
+        "lat": 49.99768,
+        "speed": 1,
+        "timestamp": 1637853019,
+        "bearing": 102,
+        "odometr": 320600
+      }
+    },
+    {
+      "speed": 0,
+      "bort_number": 3205,
+      "data": {
+        "type": "trol",
+        "number": "24",
+        "description": "602-й микрорайон - м.\"Барабашова\"-пос.",
+        "length": 4.42999982833862,
+        "bort_number": 3205,
+        "handicapped": true,
+        "gps_id": 353976014321255,
+        "lng": 36.35981,
+        "lat": 49.99186,
+        "speed": 0,
+        "timestamp": 1637852968,
+        "bearing": 103,
+        "odometr": 302603
+      }
+    },
+    {
+      "speed": 0,
+      "bort_number": 3214,
+      "data": {
+        "type": "trol",
+        "number": "24",
+        "description": "602-й микрорайон - м.\"Барабашова\"-пос.",
+        "length": 4.42999982833862,
+        "bort_number": 3214,
+        "handicapped": true,
+        "gps_id": 353976014322493,
+        "lng": 36.31432,
+        "lat": 49.99904,
+        "speed": 0,
+        "timestamp": 1637852958,
+        "bearing": 122,
+        "odometr": 360159
+      }
+    },
+    {
+      "speed": 0,
+      "bort_number": 3209,
+      "data": {
+        "type": "trol",
+        "number": "24",
+        "description": "602-й микрорайон - м.\"Барабашова\"-пос.",
+        "length": 4.42999982833862,
+        "bort_number": 3209,
+        "handicapped": true,
+        "gps_id": 353976013852714,
+        "lng": 36.30386,
+        "lat": 50.00241,
+        "speed": 0,
+        "timestamp": 1637853003,
+        "bearing": 216,
+        "odometr": 392249
+      }
+    },
+    {
+      "speed": 20,
+      "bort_number": 3215,
+      "data": {
+        "type": "trol",
+        "number": "24",
+        "description": "602-й микрорайон - м.\"Барабашова\"-пос.",
+        "length": 4.42999982833862,
+        "bort_number": 3215,
+        "handicapped": true,
+        "gps_id": 353976014245439,
+        "lng": 36.34195,
+        "lat": 49.99669,
+        "speed": 20,
+        "timestamp": 1637852933,
+        "bearing": 264,
+        "odometr": 405233
+      }
+    },
+    {
+      "speed": 22,
+      "bort_number": 3206,
+      "data": {
+        "type": "trol",
+        "number": "24",
+        "description": "602-й микрорайон - м.\"Барабашова\"-пос.",
+        "length": 4.42999982833862,
+        "bort_number": 3206,
+        "handicapped": true,
+        "gps_id": 353976013849595,
+        "lng": 36.32986,
+        "lat": 49.99747,
+        "speed": 22,
+        "timestamp": 1637852932,
+        "bearing": 286,
+        "odometr": 289016
+      }
+    },
+    {
+      "speed": 16,
+      "bort_number": 3211,
+      "data": {
+        "type": "trol",
+        "number": "24",
+        "description": "602-й микрорайон - м.\"Барабашова\"-пос.",
+        "length": 4.42999982833862,
+        "bort_number": 3211,
+        "handicapped": true,
+        "gps_id": 354330030978277,
+        "lng": 36.3079,
+        "lat": 50.00181,
+        "speed": 16,
+        "timestamp": 1637852996,
+        "bearing": 306,
+        "odometr": 32226
+      }
+    },
+    {
+      "speed": 14,
+      "bort_number": 3202,
+      "data": {
+        "type": "trol",
+        "number": "24",
+        "description": "602-й микрорайон - м.\"Барабашова\"-пос.",
+        "length": 4.42999982833862,
+        "bort_number": 3202,
+        "handicapped": true,
+        "gps_id": 353976014321339,
+        "lng": 36.35638,
+        "lat": 49.99507,
+        "speed": 14,
+        "timestamp": 1637852958,
+        "bearing": 314,
+        "odometr": 271711
+      }
+    }
+  ],
+  [
+    {
+      "speed": 15,
+      "bort_number": 3207,
+      "data": {
+        "type": "trol",
+        "number": "24",
+        "description": "602-й микрорайон - м.\"Барабашова\"-пос.",
+        "length": 4.42999982833862,
+        "bort_number": 3207,
+        "handicapped": true,
+        "gps_id": 353976014322329,
+        "lng": 36.34112,
+        "lat": 49.99652,
+        "speed": 15,
+        "timestamp": 1637852830,
+        "bearing": 88,
+        "odometr": 46589
+      }
+    },
+    {
+      "speed": 18,
+      "bort_number": 3225,
+      "data": {
+        "type": "trol",
+        "number": "24",
+        "description": "602-й микрорайон - м.\"Барабашова\"-пос.",
+        "length": 4.42999982833862,
+        "bort_number": 3225,
+        "handicapped": true,
+        "gps_id": 353976014321545,
+        "lng": 36.34121,
+        "lat": 49.99651,
+        "speed": 18,
+        "timestamp": 1637853015,
+        "bearing": 90,
+        "odometr": 405709
+      }
+    },
+    {
+      "speed": 11,
+      "bort_number": 3222,
+      "data": {
+        "type": "trol",
+        "number": "24",
+        "description": "602-й микрорайон - м.\"Барабашова\"-пос.",
+        "length": 4.42999982833862,
+        "bort_number": 3222,
+        "handicapped": true,
+        "gps_id": 359632104967705,
+        "lng": 36.30403,
+        "lat": 50.00193,
+        "speed": 11,
+        "timestamp": 1637852977,
+        "bearing": 94,
+        "odometr": 109081
+      }
+    },
+    {
+      "speed": 1,
+      "bort_number": 3224,
+      "data": {
+        "type": "trol",
+        "number": "24",
+        "description": "602-й микрорайон - м.\"Барабашова\"-пос.",
+        "length": 4.42999982833862,
+        "bort_number": 3224,
+        "handicapped": true,
+        "gps_id": 353976014244226,
+        "lng": 36.32649,
+        "lat": 49.99768,
+        "speed": 1,
+        "timestamp": 1637853019,
+        "bearing": 102,
+        "odometr": 320600
+      }
+    },
+    {
+      "speed": 0,
+      "bort_number": 3205,
+      "data": {
+        "type": "trol",
+        "number": "24",
+        "description": "602-й микрорайон - м.\"Барабашова\"-пос.",
+        "length": 4.42999982833862,
+        "bort_number": 3205,
+        "handicapped": true,
+        "gps_id": 353976014321255,
+        "lng": 36.35981,
+        "lat": 49.99186,
+        "speed": 0,
+        "timestamp": 1637852968,
+        "bearing": 103,
+        "odometr": 302603
+      }
+    },
+    {
+      "speed": 0,
+      "bort_number": 3214,
+      "data": {
+        "type": "trol",
+        "number": "24",
+        "description": "602-й микрорайон - м.\"Барабашова\"-пос.",
+        "length": 4.42999982833862,
+        "bort_number": 3214,
+        "handicapped": true,
+        "gps_id": 353976014322493,
+        "lng": 36.31432,
+        "lat": 49.99904,
+        "speed": 0,
+        "timestamp": 1637852958,
+        "bearing": 122,
+        "odometr": 360159
+      }
+    },
+    {
+      "speed": 0,
+      "bort_number": 3209,
+      "data": {
+        "type": "trol",
+        "number": "24",
+        "description": "602-й микрорайон - м.\"Барабашова\"-пос.",
+        "length": 4.42999982833862,
+        "bort_number": 3209,
+        "handicapped": true,
+        "gps_id": 353976013852714,
+        "lng": 36.30386,
+        "lat": 50.00241,
+        "speed": 0,
+        "timestamp": 1637853003,
+        "bearing": 216,
+        "odometr": 392249
+      }
+    },
+    {
+      "speed": 20,
+      "bort_number": 3215,
+      "data": {
+        "type": "trol",
+        "number": "24",
+        "description": "602-й микрорайон - м.\"Барабашова\"-пос.",
+        "length": 4.42999982833862,
+        "bort_number": 3215,
+        "handicapped": true,
+        "gps_id": 353976014245439,
+        "lng": 36.34195,
+        "lat": 49.99669,
+        "speed": 20,
+        "timestamp": 1637852933,
+        "bearing": 264,
+        "odometr": 405233
+      }
+    },
+    {
+      "speed": 22,
+      "bort_number": 3206,
+      "data": {
+        "type": "trol",
+        "number": "24",
+        "description": "602-й микрорайон - м.\"Барабашова\"-пос.",
+        "length": 4.42999982833862,
+        "bort_number": 3206,
+        "handicapped": true,
+        "gps_id": 353976013849595,
+        "lng": 36.32986,
+        "lat": 49.99747,
+        "speed": 22,
+        "timestamp": 1637852932,
+        "bearing": 286,
+        "odometr": 289016
+      }
+    },
+    {
+      "speed": 16,
+      "bort_number": 3211,
+      "data": {
+        "type": "trol",
+        "number": "24",
+        "description": "602-й микрорайон - м.\"Барабашова\"-пос.",
+        "length": 4.42999982833862,
+        "bort_number": 3211,
+        "handicapped": true,
+        "gps_id": 354330030978277,
+        "lng": 36.3079,
+        "lat": 50.00181,
+        "speed": 16,
+        "timestamp": 1637852996,
+        "bearing": 306,
+        "odometr": 32226
+      }
+    },
+    {
+      "speed": 14,
+      "bort_number": 3202,
+      "data": {
+        "type": "trol",
+        "number": "24",
+        "description": "602-й микрорайон - м.\"Барабашова\"-пос.",
+        "length": 4.42999982833862,
+        "bort_number": 3202,
+        "handicapped": true,
+        "gps_id": 353976014321339,
+        "lng": 36.35638,
+        "lat": 49.99507,
+        "speed": 14,
+        "timestamp": 1637852958,
+        "bearing": 314,
+        "odometr": 271711
+      }
+    }
+  ],
+  [
+    {
+      "speed": 15,
+      "bort_number": 3207,
+      "data": {
+        "type": "trol",
+        "number": "24",
+        "description": "602-й микрорайон - м.\"Барабашова\"-пос.",
+        "length": 4.42999982833862,
+        "bort_number": 3207,
+        "handicapped": true,
+        "gps_id": 353976014322329,
+        "lng": 36.34112,
+        "lat": 49.99652,
+        "speed": 15,
+        "timestamp": 1637852830,
+        "bearing": 88,
+        "odometr": 46589
+      }
+    },
+    {
+      "speed": 18,
+      "bort_number": 3225,
+      "data": {
+        "type": "trol",
+        "number": "24",
+        "description": "602-й микрорайон - м.\"Барабашова\"-пос.",
+        "length": 4.42999982833862,
+        "bort_number": 3225,
+        "handicapped": true,
+        "gps_id": 353976014321545,
+        "lng": 36.34121,
+        "lat": 49.99651,
+        "speed": 18,
+        "timestamp": 1637853015,
+        "bearing": 90,
+        "odometr": 405709
+      }
+    },
+    {
+      "speed": 11,
+      "bort_number": 3222,
+      "data": {
+        "type": "trol",
+        "number": "24",
+        "description": "602-й микрорайон - м.\"Барабашова\"-пос.",
+        "length": 4.42999982833862,
+        "bort_number": 3222,
+        "handicapped": true,
+        "gps_id": 359632104967705,
+        "lng": 36.30403,
+        "lat": 50.00193,
+        "speed": 11,
+        "timestamp": 1637852977,
+        "bearing": 94,
+        "odometr": 109081
+      }
+    },
+    {
+      "speed": 1,
+      "bort_number": 3224,
+      "data": {
+        "type": "trol",
+        "number": "24",
+        "description": "602-й микрорайон - м.\"Барабашова\"-пос.",
+        "length": 4.42999982833862,
+        "bort_number": 3224,
+        "handicapped": true,
+        "gps_id": 353976014244226,
+        "lng": 36.32649,
+        "lat": 49.99768,
+        "speed": 1,
+        "timestamp": 1637853019,
+        "bearing": 102,
+        "odometr": 320600
+      }
+    },
+    {
+      "speed": 0,
+      "bort_number": 3205,
+      "data": {
+        "type": "trol",
+        "number": "24",
+        "description": "602-й микрорайон - м.\"Барабашова\"-пос.",
+        "length": 4.42999982833862,
+        "bort_number": 3205,
+        "handicapped": true,
+        "gps_id": 353976014321255,
+        "lng": 36.35981,
+        "lat": 49.99186,
+        "speed": 0,
+        "timestamp": 1637852968,
+        "bearing": 103,
+        "odometr": 302603
+      }
+    },
+    {
+      "speed": 0,
+      "bort_number": 3214,
+      "data": {
+        "type": "trol",
+        "number": "24",
+        "description": "602-й микрорайон - м.\"Барабашова\"-пос.",
+        "length": 4.42999982833862,
+        "bort_number": 3214,
+        "handicapped": true,
+        "gps_id": 353976014322493,
+        "lng": 36.31432,
+        "lat": 49.99904,
+        "speed": 0,
+        "timestamp": 1637852958,
+        "bearing": 122,
+        "odometr": 360159
+      }
+    },
+    {
+      "speed": 0,
+      "bort_number": 3209,
+      "data": {
+        "type": "trol",
+        "number": "24",
+        "description": "602-й микрорайон - м.\"Барабашова\"-пос.",
+        "length": 4.42999982833862,
+        "bort_number": 3209,
+        "handicapped": true,
+        "gps_id": 353976013852714,
+        "lng": 36.30386,
+        "lat": 50.00241,
+        "speed": 0,
+        "timestamp": 1637853003,
+        "bearing": 216,
+        "odometr": 392249
+      }
+    },
+    {
+      "speed": 20,
+      "bort_number": 3215,
+      "data": {
+        "type": "trol",
+        "number": "24",
+        "description": "602-й микрорайон - м.\"Барабашова\"-пос.",
+        "length": 4.42999982833862,
+        "bort_number": 3215,
+        "handicapped": true,
+        "gps_id": 353976014245439,
+        "lng": 36.34195,
+        "lat": 49.99669,
+        "speed": 20,
+        "timestamp": 1637852933,
+        "bearing": 264,
+        "odometr": 405233
+      }
+    },
+    {
+      "speed": 22,
+      "bort_number": 3206,
+      "data": {
+        "type": "trol",
+        "number": "24",
+        "description": "602-й микрорайон - м.\"Барабашова\"-пос.",
+        "length": 4.42999982833862,
+        "bort_number": 3206,
+        "handicapped": true,
+        "gps_id": 353976013849595,
+        "lng": 36.32986,
+        "lat": 49.99747,
+        "speed": 22,
+        "timestamp": 1637852932,
+        "bearing": 286,
+        "odometr": 289016
+      }
+    },
+    {
+      "speed": 16,
+      "bort_number": 3211,
+      "data": {
+        "type": "trol",
+        "number": "24",
+        "description": "602-й микрорайон - м.\"Барабашова\"-пос.",
+        "length": 4.42999982833862,
+        "bort_number": 3211,
+        "handicapped": true,
+        "gps_id": 354330030978277,
+        "lng": 36.3079,
+        "lat": 50.00181,
+        "speed": 16,
+        "timestamp": 1637852996,
+        "bearing": 306,
+        "odometr": 32226
+      }
+    },
+    {
+      "speed": 14,
+      "bort_number": 3202,
+      "data": {
+        "type": "trol",
+        "number": "24",
+        "description": "602-й микрорайон - м.\"Барабашова\"-пос.",
+        "length": 4.42999982833862,
+        "bort_number": 3202,
+        "handicapped": true,
+        "gps_id": 353976014321339,
+        "lng": 36.35638,
+        "lat": 49.99507,
+        "speed": 14,
+        "timestamp": 1637852958,
+        "bearing": 314,
+        "odometr": 271711
+      }
+    }
+  ],
+  [
+    {
+      "speed": 15,
+      "bort_number": 3207,
+      "data": {
+        "type": "trol",
+        "number": "24",
+        "description": "602-й микрорайон - м.\"Барабашова\"-пос.",
+        "length": 4.42999982833862,
+        "bort_number": 3207,
+        "handicapped": true,
+        "gps_id": 353976014322329,
+        "lng": 36.34112,
+        "lat": 49.99652,
+        "speed": 15,
+        "timestamp": 1637852830,
+        "bearing": 88,
+        "odometr": 46589
+      }
+    },
+    {
+      "speed": 18,
+      "bort_number": 3225,
+      "data": {
+        "type": "trol",
+        "number": "24",
+        "description": "602-й микрорайон - м.\"Барабашова\"-пос.",
+        "length": 4.42999982833862,
+        "bort_number": 3225,
+        "handicapped": true,
+        "gps_id": 353976014321545,
+        "lng": 36.34121,
+        "lat": 49.99651,
+        "speed": 18,
+        "timestamp": 1637853015,
+        "bearing": 90,
+        "odometr": 405709
+      }
+    },
+    {
+      "speed": 11,
+      "bort_number": 3222,
+      "data": {
+        "type": "trol",
+        "number": "24",
+        "description": "602-й микрорайон - м.\"Барабашова\"-пос.",
+        "length": 4.42999982833862,
+        "bort_number": 3222,
+        "handicapped": true,
+        "gps_id": 359632104967705,
+        "lng": 36.30403,
+        "lat": 50.00193,
+        "speed": 11,
+        "timestamp": 1637852977,
+        "bearing": 94,
+        "odometr": 109081
+      }
+    },
+    {
+      "speed": 1,
+      "bort_number": 3224,
+      "data": {
+        "type": "trol",
+        "number": "24",
+        "description": "602-й микрорайон - м.\"Барабашова\"-пос.",
+        "length": 4.42999982833862,
+        "bort_number": 3224,
+        "handicapped": true,
+        "gps_id": 353976014244226,
+        "lng": 36.32649,
+        "lat": 49.99768,
+        "speed": 1,
+        "timestamp": 1637853019,
+        "bearing": 102,
+        "odometr": 320600
+      }
+    },
+    {
+      "speed": 0,
+      "bort_number": 3205,
+      "data": {
+        "type": "trol",
+        "number": "24",
+        "description": "602-й микрорайон - м.\"Барабашова\"-пос.",
+        "length": 4.42999982833862,
+        "bort_number": 3205,
+        "handicapped": true,
+        "gps_id": 353976014321255,
+        "lng": 36.35981,
+        "lat": 49.99186,
+        "speed": 0,
+        "timestamp": 1637852968,
+        "bearing": 103,
+        "odometr": 302603
+      }
+    },
+    {
+      "speed": 0,
+      "bort_number": 3214,
+      "data": {
+        "type": "trol",
+        "number": "24",
+        "description": "602-й микрорайон - м.\"Барабашова\"-пос.",
+        "length": 4.42999982833862,
+        "bort_number": 3214,
+        "handicapped": true,
+        "gps_id": 353976014322493,
+        "lng": 36.31432,
+        "lat": 49.99904,
+        "speed": 0,
+        "timestamp": 1637852958,
+        "bearing": 122,
+        "odometr": 360159
+      }
+    },
+    {
+      "speed": 0,
+      "bort_number": 3209,
+      "data": {
+        "type": "trol",
+        "number": "24",
+        "description": "602-й микрорайон - м.\"Барабашова\"-пос.",
+        "length": 4.42999982833862,
+        "bort_number": 3209,
+        "handicapped": true,
+        "gps_id": 353976013852714,
+        "lng": 36.30386,
+        "lat": 50.00241,
+        "speed": 0,
+        "timestamp": 1637853003,
+        "bearing": 216,
+        "odometr": 392249
+      }
+    },
+    {
+      "speed": 20,
+      "bort_number": 3215,
+      "data": {
+        "type": "trol",
+        "number": "24",
+        "description": "602-й микрорайон - м.\"Барабашова\"-пос.",
+        "length": 4.42999982833862,
+        "bort_number": 3215,
+        "handicapped": true,
+        "gps_id": 353976014245439,
+        "lng": 36.34195,
+        "lat": 49.99669,
+        "speed": 20,
+        "timestamp": 1637852933,
+        "bearing": 264,
+        "odometr": 405233
+      }
+    },
+    {
+      "speed": 22,
+      "bort_number": 3206,
+      "data": {
+        "type": "trol",
+        "number": "24",
+        "description": "602-й микрорайон - м.\"Барабашова\"-пос.",
+        "length": 4.42999982833862,
+        "bort_number": 3206,
+        "handicapped": true,
+        "gps_id": 353976013849595,
+        "lng": 36.32986,
+        "lat": 49.99747,
+        "speed": 22,
+        "timestamp": 1637852932,
+        "bearing": 286,
+        "odometr": 289016
+      }
+    },
+    {
+      "speed": 16,
+      "bort_number": 3211,
+      "data": {
+        "type": "trol",
+        "number": "24",
+        "description": "602-й микрорайон - м.\"Барабашова\"-пос.",
+        "length": 4.42999982833862,
+        "bort_number": 3211,
+        "handicapped": true,
+        "gps_id": 354330030978277,
+        "lng": 36.3079,
+        "lat": 50.00181,
+        "speed": 16,
+        "timestamp": 1637852996,
+        "bearing": 306,
+        "odometr": 32226
+      }
+    },
+    {
+      "speed": 14,
+      "bort_number": 3202,
+      "data": {
+        "type": "trol",
+        "number": "24",
+        "description": "602-й микрорайон - м.\"Барабашова\"-пос.",
+        "length": 4.42999982833862,
+        "bort_number": 3202,
+        "handicapped": true,
+        "gps_id": 353976014321339,
+        "lng": 36.35638,
+        "lat": 49.99507,
+        "speed": 14,
+        "timestamp": 1637852958,
+        "bearing": 314,
+        "odometr": 271711
+      }
+    }
+  ],
+  [
+    {
+      "speed": 0,
+      "bort_number": 3222,
+      "data": {
+        "type": "trol",
+        "number": "24",
+        "description": "602-й микрорайон - м.\"Барабашова\"-пос.",
+        "length": 4.42999982833862,
+        "bort_number": 3222,
+        "handicapped": true,
+        "gps_id": 359632104967705,
+        "lng": 36.30437,
+        "lat": 50.00193,
+        "speed": 0,
+        "timestamp": 1637853051,
+        "bearing": 85,
+        "odometr": 109081
+      }
+    },
+    {
+      "speed": 18,
+      "bort_number": 3225,
+      "data": {
+        "type": "trol",
+        "number": "24",
+        "description": "602-й микрорайон - м.\"Барабашова\"-пос.",
+        "length": 4.42999982833862,
+        "bort_number": 3225,
+        "handicapped": true,
+        "gps_id": 353976014321545,
+        "lng": 36.34121,
+        "lat": 49.99651,
+        "speed": 18,
+        "timestamp": 1637853015,
+        "bearing": 90,
+        "odometr": 405709
+      }
+    },
+    {
+      "speed": 1,
+      "bort_number": 3224,
+      "data": {
+        "type": "trol",
+        "number": "24",
+        "description": "602-й микрорайон - м.\"Барабашова\"-пос.",
+        "length": 4.42999982833862,
+        "bort_number": 3224,
+        "handicapped": true,
+        "gps_id": 353976014244226,
+        "lng": 36.32649,
+        "lat": 49.99768,
+        "speed": 1,
+        "timestamp": 1637853019,
+        "bearing": 102,
+        "odometr": 320600
+      }
+    },
+    {
+      "speed": 0,
+      "bort_number": 3205,
+      "data": {
+        "type": "trol",
+        "number": "24",
+        "description": "602-й микрорайон - м.\"Барабашова\"-пос.",
+        "length": 4.42999982833862,
+        "bort_number": 3205,
+        "handicapped": true,
+        "gps_id": 353976014321255,
+        "lng": 36.35981,
+        "lat": 49.99186,
+        "speed": 0,
+        "timestamp": 1637852968,
+        "bearing": 103,
+        "odometr": 302603
+      }
+    },
+    {
+      "speed": 1,
+      "bort_number": 3214,
+      "data": {
+        "type": "trol",
+        "number": "24",
+        "description": "602-й микрорайон - м.\"Барабашова\"-пос.",
+        "length": 4.42999982833862,
+        "bort_number": 3214,
+        "handicapped": true,
+        "gps_id": 353976014322493,
+        "lng": 36.31694,
+        "lat": 49.99842,
+        "speed": 1,
+        "timestamp": 1637853039,
+        "bearing": 110,
+        "odometr": 360159
+      }
+    },
+    {
+      "speed": 20,
+      "bort_number": 3207,
+      "data": {
+        "type": "trol",
+        "number": "24",
+        "description": "602-й микрорайон - м.\"Барабашова\"-пос.",
+        "length": 4.42999982833862,
+        "bort_number": 3207,
+        "handicapped": true,
+        "gps_id": 353976014322329,
+        "lng": 36.35791,
+        "lat": 49.99409,
+        "speed": 20,
+        "timestamp": 1637853062,
+        "bearing": 136,
+        "odometr": 46591
+      }
+    },
+    {
+      "speed": 0,
+      "bort_number": 3209,
+      "data": {
+        "type": "trol",
+        "number": "24",
+        "description": "602-й микрорайон - м.\"Барабашова\"-пос.",
+        "length": 4.42999982833862,
+        "bort_number": 3209,
+        "handicapped": true,
+        "gps_id": 353976013852714,
+        "lng": 36.30386,
+        "lat": 50.00241,
+        "speed": 0,
+        "timestamp": 1637853003,
+        "bearing": 216,
+        "odometr": 392249
+      }
+    },
+    {
+      "speed": 31,
+      "bort_number": 3206,
+      "data": {
+        "type": "trol",
+        "number": "24",
+        "description": "602-й микрорайон - м.\"Барабашова\"-пос.",
+        "length": 4.42999982833862,
+        "bort_number": 3206,
+        "handicapped": true,
+        "gps_id": 353976013849595,
+        "lng": 36.32482,
+        "lat": 49.99781,
+        "speed": 31,
+        "timestamp": 1637853045,
+        "bearing": 278,
+        "odometr": 289017
+      }
+    },
+    {
+      "speed": 0,
+      "bort_number": 3215,
+      "data": {
+        "type": "trol",
+        "number": "24",
+        "description": "602-й микрорайон - м.\"Барабашова\"-пос.",
+        "length": 4.42999982833862,
+        "bort_number": 3215,
+        "handicapped": true,
+        "gps_id": 353976014245439,
+        "lng": 36.33917,
+        "lat": 49.99676,
+        "speed": 0,
+        "timestamp": 1637853038,
+        "bearing": 285,
+        "odometr": 405233
+      }
+    },
+    {
+      "speed": 21,
+      "bort_number": 3202,
+      "data": {
+        "type": "trol",
+        "number": "24",
+        "description": "602-й микрорайон - м.\"Барабашова\"-пос.",
+        "length": 4.42999982833862,
+        "bort_number": 3202,
+        "handicapped": true,
+        "gps_id": 353976014321339,
+        "lng": 36.35125,
+        "lat": 49.9963,
+        "speed": 21,
+        "timestamp": 1637853021,
+        "bearing": 292,
+        "odometr": 271712
+      }
+    },
+    {
+      "speed": 16,
+      "bort_number": 3211,
+      "data": {
+        "type": "trol",
+        "number": "24",
+        "description": "602-й микрорайон - м.\"Барабашова\"-пос.",
+        "length": 4.42999982833862,
+        "bort_number": 3211,
+        "handicapped": true,
+        "gps_id": 354330030978277,
+        "lng": 36.3079,
+        "lat": 50.00181,
+        "speed": 16,
+        "timestamp": 1637852996,
+        "bearing": 306,
+        "odometr": 32226
+      }
+    }
+  ],
+  [
+    {
+      "speed": 46,
+      "bort_number": 3225,
+      "data": {
+        "type": "trol",
+        "number": "24",
+        "description": "602-й микрорайон - м.\"Барабашова\"-пос.",
+        "length": 4.42999982833862,
+        "bort_number": 3225,
+        "handicapped": true,
+        "gps_id": 353976014321545,
+        "lng": 36.34875,
+        "lat": 49.99637,
+        "speed": 46,
+        "timestamp": 1637853108,
+        "bearing": 96,
+        "odometr": 405710
+      }
+    },
+    {
+      "speed": 12,
+      "bort_number": 3214,
+      "data": {
+        "type": "trol",
+        "number": "24",
+        "description": "602-й микрорайон - м.\"Барабашова\"-пос.",
+        "length": 4.42999982833862,
+        "bort_number": 3214,
+        "handicapped": true,
+        "gps_id": 353976014322493,
+        "lng": 36.32293,
+        "lat": 49.99786,
+        "speed": 12,
+        "timestamp": 1637853118,
+        "bearing": 97,
+        "odometr": 360160
+      }
+    },
+    {
+      "speed": 0,
+      "bort_number": 3224,
+      "data": {
+        "type": "trol",
+        "number": "24",
+        "description": "602-й микрорайон - м.\"Барабашова\"-пос.",
+        "length": 4.42999982833862,
+        "bort_number": 3224,
+        "handicapped": true,
+        "gps_id": 353976014244226,
+        "lng": 36.32941,
+        "lat": 49.99736,
+        "speed": 0,
+        "timestamp": 1637853106,
+        "bearing": 99,
+        "odometr": 320600
+      }
+    },
+    {
+      "speed": 28,
+      "bort_number": 3222,
+      "data": {
+        "type": "trol",
+        "number": "24",
+        "description": "602-й микрорайон - м.\"Барабашова\"-пос.",
+        "length": 4.42999982833862,
+        "bort_number": 3222,
+        "handicapped": true,
+        "gps_id": 359632104967705,
+        "lng": 36.30571,
+        "lat": 50.00241,
+        "speed": 28,
+        "timestamp": 1637853124,
+        "bearing": 100,
+        "odometr": 109081
+      }
+    },
+    {
+      "speed": 21,
+      "bort_number": 3207,
+      "data": {
+        "type": "trol",
+        "number": "24",
+        "description": "602-й микрорайон - м.\"Барабашова\"-пос.",
+        "length": 4.42999982833862,
+        "bort_number": 3207,
+        "handicapped": true,
+        "gps_id": 353976014322329,
+        "lng": 36.35953,
+        "lat": 49.99207,
+        "speed": 21,
+        "timestamp": 1637853106,
+        "bearing": 185,
+        "odometr": 46591
+      }
+    },
+    {
+      "speed": 7,
+      "bort_number": 3209,
+      "data": {
+        "type": "trol",
+        "number": "24",
+        "description": "602-й микрорайон - м.\"Барабашова\"-пос.",
+        "length": 4.42999982833862,
+        "bort_number": 3209,
+        "handicapped": true,
+        "gps_id": 353976013852714,
+        "lng": 36.30337,
+        "lat": 50.00222,
+        "speed": 7,
+        "timestamp": 1637853124,
+        "bearing": 185,
+        "odometr": 392249
+      }
+    },
+    {
+      "speed": 17,
+      "bort_number": 3211,
+      "data": {
+        "type": "trol",
+        "number": "24",
+        "description": "602-й микрорайон - м.\"Барабашова\"-пос.",
+        "length": 4.42999982833862,
+        "bort_number": 3211,
+        "handicapped": true,
+        "gps_id": 354330030978277,
+        "lng": 36.30516,
+        "lat": 50.00237,
+        "speed": 17,
+        "timestamp": 1637853065,
+        "bearing": 266,
+        "odometr": 32226
+      }
+    },
+    {
+      "speed": 22,
+      "bort_number": 3202,
+      "data": {
+        "type": "trol",
+        "number": "24",
+        "description": "602-й микрорайон - м.\"Барабашова\"-пос.",
+        "length": 4.42999982833862,
+        "bort_number": 3202,
+        "handicapped": true,
+        "gps_id": 353976014321339,
+        "lng": 36.34667,
+        "lat": 49.99658,
+        "speed": 22,
+        "timestamp": 1637853104,
+        "bearing": 276,
+        "odometr": 271712
+      }
+    },
+    {
+      "speed": 15,
+      "bort_number": 3206,
+      "data": {
+        "type": "trol",
+        "number": "24",
+        "description": "602-й микрорайон - м.\"Барабашова\"-пос.",
+        "length": 4.42999982833862,
+        "bort_number": 3206,
+        "handicapped": true,
+        "gps_id": 353976013849595,
+        "lng": 36.31721,
+        "lat": 49.9984,
+        "speed": 15,
+        "timestamp": 1637853112,
+        "bearing": 279,
+        "odometr": 289017
+      }
+    },
+    {
+      "speed": 0,
+      "bort_number": 3205,
+      "data": {
+        "type": "trol",
+        "number": "24",
+        "description": "602-й микрорайон - м.\"Барабашова\"-пос.",
+        "length": 4.42999982833862,
+        "bort_number": 3205,
+        "handicapped": true,
+        "gps_id": 353976014321255,
+        "lng": 36.36026,
+        "lat": 49.99197,
+        "speed": 0,
+        "timestamp": 1637853028,
+        "bearing": 280,
+        "odometr": 302603
+      }
+    },
+    {
+      "speed": 0,
+      "bort_number": 3215,
+      "data": {
+        "type": "trol",
+        "number": "24",
+        "description": "602-й микрорайон - м.\"Барабашова\"-пос.",
+        "length": 4.42999982833862,
+        "bort_number": 3215,
+        "handicapped": true,
+        "gps_id": 353976014245439,
+        "lng": 36.33917,
+        "lat": 49.99676,
+        "speed": 0,
+        "timestamp": 1637853038,
+        "bearing": 285,
+        "odometr": 405233
+      }
+    }
+  ],
+  [
+    {
+      "speed": 12,
+      "bort_number": 3214,
+      "data": {
+        "type": "trol",
+        "number": "24",
+        "description": "602-й микрорайон - м.\"Барабашова\"-пос.",
+        "length": 4.42999982833862,
+        "bort_number": 3214,
+        "handicapped": true,
+        "gps_id": 353976014322493,
+        "lng": 36.32293,
+        "lat": 49.99786,
+        "speed": 12,
+        "timestamp": 1637853118,
+        "bearing": 97,
+        "odometr": 360160
+      }
+    },
+    {
+      "speed": 0,
+      "bort_number": 3224,
+      "data": {
+        "type": "trol",
+        "number": "24",
+        "description": "602-й микрорайон - м.\"Барабашова\"-пос.",
+        "length": 4.42999982833862,
+        "bort_number": 3224,
+        "handicapped": true,
+        "gps_id": 353976014244226,
+        "lng": 36.32941,
+        "lat": 49.99736,
+        "speed": 0,
+        "timestamp": 1637853106,
+        "bearing": 99,
+        "odometr": 320600
+      }
+    },
+    {
+      "speed": 26,
+      "bort_number": 3225,
+      "data": {
+        "type": "trol",
+        "number": "24",
+        "description": "602-й микрорайон - м.\"Барабашова\"-пос.",
+        "length": 4.42999982833862,
+        "bort_number": 3225,
+        "handicapped": true,
+        "gps_id": 353976014321545,
+        "lng": 36.35172,
+        "lat": 49.99608,
+        "speed": 26,
+        "timestamp": 1637853129,
+        "bearing": 104,
+        "odometr": 405710
+      }
+    },
+    {
+      "speed": 43,
+      "bort_number": 3222,
+      "data": {
+        "type": "trol",
+        "number": "24",
+        "description": "602-й микрорайон - м.\"Барабашова\"-пос.",
+        "length": 4.42999982833862,
+        "bort_number": 3222,
+        "handicapped": true,
+        "gps_id": 359632104967705,
+        "lng": 36.31116,
+        "lat": 50.00039,
+        "speed": 43,
+        "timestamp": 1637853167,
+        "bearing": 124,
+        "odometr": 109082
+      }
+    },
+    {
+      "speed": 21,
+      "bort_number": 3207,
+      "data": {
+        "type": "trol",
+        "number": "24",
+        "description": "602-й микрорайон - м.\"Барабашова\"-пос.",
+        "length": 4.42999982833862,
+        "bort_number": 3207,
+        "handicapped": true,
+        "gps_id": 353976014322329,
+        "lng": 36.35953,
+        "lat": 49.99207,
+        "speed": 21,
+        "timestamp": 1637853106,
+        "bearing": 185,
+        "odometr": 46591
+      }
+    },
+    {
+      "speed": 7,
+      "bort_number": 3209,
+      "data": {
+        "type": "trol",
+        "number": "24",
+        "description": "602-й микрорайон - м.\"Барабашова\"-пос.",
+        "length": 4.42999982833862,
+        "bort_number": 3209,
+        "handicapped": true,
+        "gps_id": 353976013852714,
+        "lng": 36.30337,
+        "lat": 50.00222,
+        "speed": 7,
+        "timestamp": 1637853124,
+        "bearing": 185,
+        "odometr": 392249
+      }
+    },
+    {
+      "speed": 17,
+      "bort_number": 3211,
+      "data": {
+        "type": "trol",
+        "number": "24",
+        "description": "602-й микрорайон - м.\"Барабашова\"-пос.",
+        "length": 4.42999982833862,
+        "bort_number": 3211,
+        "handicapped": true,
+        "gps_id": 354330030978277,
+        "lng": 36.30516,
+        "lat": 50.00237,
+        "speed": 17,
+        "timestamp": 1637853065,
+        "bearing": 266,
+        "odometr": 32226
+      }
+    },
+    {
+      "speed": 20,
+      "bort_number": 3202,
+      "data": {
+        "type": "trol",
+        "number": "24",
+        "description": "602-й микрорайон - м.\"Барабашова\"-пос.",
+        "length": 4.42999982833862,
+        "bort_number": 3202,
+        "handicapped": true,
+        "gps_id": 353976014321339,
+        "lng": 36.34213,
+        "lat": 49.9966,
+        "speed": 20,
+        "timestamp": 1637853164,
+        "bearing": 269,
+        "odometr": 271712
+      }
+    },
+    {
+      "speed": 16,
+      "bort_number": 3215,
+      "data": {
+        "type": "trol",
+        "number": "24",
+        "description": "602-й микрорайон - м.\"Барабашова\"-пос.",
+        "length": 4.42999982833862,
+        "bort_number": 3215,
+        "handicapped": true,
+        "gps_id": 353976014245439,
+        "lng": 36.32957,
+        "lat": 49.99747,
+        "speed": 16,
+        "timestamp": 1637853161,
+        "bearing": 277,
+        "odometr": 405234
+      }
+    },
+    {
+      "speed": 0,
+      "bort_number": 3205,
+      "data": {
+        "type": "trol",
+        "number": "24",
+        "description": "602-й микрорайон - м.\"Барабашова\"-пос.",
+        "length": 4.42999982833862,
+        "bort_number": 3205,
+        "handicapped": true,
+        "gps_id": 353976014321255,
+        "lng": 36.36026,
+        "lat": 49.99197,
+        "speed": 0,
+        "timestamp": 1637853028,
+        "bearing": 280,
+        "odometr": 302603
+      }
+    },
+    {
+      "speed": 9,
+      "bort_number": 3206,
+      "data": {
+        "type": "trol",
+        "number": "24",
+        "description": "602-й микрорайон - м.\"Барабашова\"-пос.",
+        "length": 4.42999982833862,
+        "bort_number": 3206,
+        "handicapped": true,
+        "gps_id": 353976013849595,
+        "lng": 36.31511,
+        "lat": 49.99876,
+        "speed": 9,
+        "timestamp": 1637853148,
+        "bearing": 307,
+        "odometr": 289017
+      }
+    }
+  ],
+  [
+    {
+      "speed": 0,
+      "bort_number": 3211,
+      "data": {
+        "type": "trol",
+        "number": "24",
+        "description": "602-й микрорайон - м.\"Барабашова\"-пос.",
+        "length": 4.42999982833862,
+        "bort_number": 3211,
+        "handicapped": true,
+        "gps_id": 354330030978277,
+        "lng": 36.30397,
+        "lat": 50.0023,
+        "speed": 0,
+        "timestamp": 1637853181,
+        "bearing": 0,
+        "odometr": 32226
+      }
+    },
+    {
+      "speed": 0,
+      "bort_number": 3209,
+      "data": {
+        "type": "trol",
+        "number": "24",
+        "description": "602-й микрорайон - м.\"Барабашова\"-пос.",
+        "length": 4.42999982833862,
+        "bort_number": 3209,
+        "handicapped": true,
+        "gps_id": 353976013852714,
+        "lng": 36.30448,
+        "lat": 50.00193,
+        "speed": 0,
+        "timestamp": 1637853214,
+        "bearing": 21,
+        "odometr": 392249
+      }
+    },
+    {
+      "speed": 18,
+      "bort_number": 3224,
+      "data": {
+        "type": "trol",
+        "number": "24",
+        "description": "602-й микрорайон - м.\"Барабашова\"-пос.",
+        "length": 4.42999982833862,
+        "bort_number": 3224,
+        "handicapped": true,
+        "gps_id": 353976014244226,
+        "lng": 36.33529,
+        "lat": 49.99688,
+        "speed": 18,
+        "timestamp": 1637853209,
+        "bearing": 101,
+        "odometr": 320600
+      }
+    },
+    {
+      "speed": 4,
+      "bort_number": 3214,
+      "data": {
+        "type": "trol",
+        "number": "24",
+        "description": "602-й микрорайон - м.\"Барабашова\"-пос.",
+        "length": 4.42999982833862,
+        "bort_number": 3214,
+        "handicapped": true,
+        "gps_id": 353976014322493,
+        "lng": 36.32364,
+        "lat": 49.99778,
+        "speed": 4,
+        "timestamp": 1637853178,
+        "bearing": 111,
+        "odometr": 360160
+      }
+    },
+    {
+      "speed": 20,
+      "bort_number": 3222,
+      "data": {
+        "type": "trol",
+        "number": "24",
+        "description": "602-й микрорайон - м.\"Барабашова\"-пос.",
+        "length": 4.42999982833862,
+        "bort_number": 3222,
+        "handicapped": true,
+        "gps_id": 359632104967705,
+        "lng": 36.31507,
+        "lat": 49.99868,
+        "speed": 20,
+        "timestamp": 1637853231,
+        "bearing": 124,
+        "odometr": 109082
+      }
+    },
+    {
+      "speed": 29,
+      "bort_number": 3225,
+      "data": {
+        "type": "trol",
+        "number": "24",
+        "description": "602-й микрорайон - м.\"Барабашова\"-пос.",
+        "length": 4.42999982833862,
+        "bort_number": 3225,
+        "handicapped": true,
+        "gps_id": 353976014321545,
+        "lng": 36.35733,
+        "lat": 49.99439,
+        "speed": 29,
+        "timestamp": 1637853208,
+        "bearing": 129,
+        "odometr": 405711
+      }
+    },
+    {
+      "speed": 0,
+      "bort_number": 3202,
+      "data": {
+        "type": "trol",
+        "number": "24",
+        "description": "602-й микрорайон - м.\"Барабашова\"-пос.",
+        "length": 4.42999982833862,
+        "bort_number": 3202,
+        "handicapped": true,
+        "gps_id": 353976014321339,
+        "lng": 36.34068,
+        "lat": 49.99659,
+        "speed": 0,
+        "timestamp": 1637853193,
+        "bearing": 236,
+        "odometr": 271713
+      }
+    },
+    {
+      "speed": 16,
+      "bort_number": 3215,
+      "data": {
+        "type": "trol",
+        "number": "24",
+        "description": "602-й микрорайон - м.\"Барабашова\"-пос.",
+        "length": 4.42999982833862,
+        "bort_number": 3215,
+        "handicapped": true,
+        "gps_id": 353976014245439,
+        "lng": 36.32957,
+        "lat": 49.99747,
+        "speed": 16,
+        "timestamp": 1637853161,
+        "bearing": 277,
+        "odometr": 405234
+      }
+    },
+    {
+      "speed": 31,
+      "bort_number": 3205,
+      "data": {
+        "type": "trol",
+        "number": "24",
+        "description": "602-й микрорайон - м.\"Барабашова\"-пос.",
+        "length": 4.42999982833862,
+        "bort_number": 3205,
+        "handicapped": true,
+        "gps_id": 353976014321255,
+        "lng": 36.35307,
+        "lat": 49.99592,
+        "speed": 31,
+        "timestamp": 1637853212,
+        "bearing": 288,
+        "odometr": 302604
+      }
+    },
+    {
+      "speed": 9,
+      "bort_number": 3206,
+      "data": {
+        "type": "trol",
+        "number": "24",
+        "description": "602-й микрорайон - м.\"Барабашова\"-пос.",
+        "length": 4.42999982833862,
+        "bort_number": 3206,
+        "handicapped": true,
+        "gps_id": 353976013849595,
+        "lng": 36.31511,
+        "lat": 49.99876,
+        "speed": 9,
+        "timestamp": 1637853148,
+        "bearing": 307,
+        "odometr": 289017
+      }
+    },
+    {
+      "speed": 10,
+      "bort_number": 3207,
+      "data": {
+        "type": "trol",
+        "number": "24",
+        "description": "602-й микрорайон - м.\"Барабашова\"-пос.",
+        "length": 4.42999982833862,
+        "bort_number": 3207,
+        "handicapped": true,
+        "gps_id": 353976014322329,
+        "lng": 36.35998,
+        "lat": 49.99229,
+        "speed": 10,
+        "timestamp": 1637853213,
+        "bearing": 324,
+        "odometr": 46591
+      }
+    }
+  ],
+  [
+    {
+      "speed": 0,
+      "bort_number": 3211,
+      "data": {
+        "type": "trol",
+        "number": "24",
+        "description": "602-й микрорайон - м.\"Барабашова\"-пос.",
+        "length": 4.42999982833862,
+        "bort_number": 3211,
+        "handicapped": true,
+        "gps_id": 354330030978277,
+        "lng": 36.30397,
+        "lat": 50.00229,
+        "speed": 0,
+        "timestamp": 1637853241,
+        "bearing": 0,
+        "odometr": 32226
+      }
+    },
+    {
+      "speed": 0,
+      "bort_number": 3209,
+      "data": {
+        "type": "trol",
+        "number": "24",
+        "description": "602-й микрорайон - м.\"Барабашова\"-пос.",
+        "length": 4.42999982833862,
+        "bort_number": 3209,
+        "handicapped": true,
+        "gps_id": 353976013852714,
+        "lng": 36.30448,
+        "lat": 50.00193,
+        "speed": 0,
+        "timestamp": 1637853214,
+        "bearing": 21,
+        "odometr": 392249
+      }
+    },
+    {
+      "speed": 27,
+      "bort_number": 3214,
+      "data": {
+        "type": "trol",
+        "number": "24",
+        "description": "602-й микрорайон - м.\"Барабашова\"-пос.",
+        "length": 4.42999982833862,
+        "bort_number": 3214,
+        "handicapped": true,
+        "gps_id": 353976014322493,
+        "lng": 36.32501,
+        "lat": 49.99777,
+        "speed": 27,
+        "timestamp": 1637853250,
+        "bearing": 93,
+        "odometr": 360160
+      }
+    },
+    {
+      "speed": 24,
+      "bort_number": 3222,
+      "data": {
+        "type": "trol",
+        "number": "24",
+        "description": "602-й микрорайон - м.\"Барабашова\"-пос.",
+        "length": 4.42999982833862,
+        "bort_number": 3222,
+        "handicapped": true,
+        "gps_id": 359632104967705,
+        "lng": 36.31782,
+        "lat": 49.99833,
+        "speed": 24,
+        "timestamp": 1637853290,
+        "bearing": 98,
+        "odometr": 109082
+      }
+    },
+    {
+      "speed": 18,
+      "bort_number": 3224,
+      "data": {
+        "type": "trol",
+        "number": "24",
+        "description": "602-й микрорайон - м.\"Барабашова\"-пос.",
+        "length": 4.42999982833862,
+        "bort_number": 3224,
+        "handicapped": true,
+        "gps_id": 353976014244226,
+        "lng": 36.33529,
+        "lat": 49.99688,
+        "speed": 18,
+        "timestamp": 1637853209,
+        "bearing": 101,
+        "odometr": 320600
+      }
+    },
+    {
+      "speed": 29,
+      "bort_number": 3225,
+      "data": {
+        "type": "trol",
+        "number": "24",
+        "description": "602-й микрорайон - м.\"Барабашова\"-пос.",
+        "length": 4.42999982833862,
+        "bort_number": 3225,
+        "handicapped": true,
+        "gps_id": 353976014321545,
+        "lng": 36.35733,
+        "lat": 49.99439,
+        "speed": 29,
+        "timestamp": 1637853208,
+        "bearing": 129,
+        "odometr": 405711
+      }
+    },
+    {
+      "speed": 0,
+      "bort_number": 3202,
+      "data": {
+        "type": "trol",
+        "number": "24",
+        "description": "602-й микрорайон - м.\"Барабашова\"-пос.",
+        "length": 4.42999982833862,
+        "bort_number": 3202,
+        "handicapped": true,
+        "gps_id": 353976014321339,
+        "lng": 36.34068,
+        "lat": 49.99659,
+        "speed": 0,
+        "timestamp": 1637853193,
+        "bearing": 236,
+        "odometr": 271713
+      }
+    },
+    {
+      "speed": 32,
+      "bort_number": 3215,
+      "data": {
+        "type": "trol",
+        "number": "24",
+        "description": "602-й микрорайон - м.\"Барабашова\"-пос.",
+        "length": 4.42999982833862,
+        "bort_number": 3215,
+        "handicapped": true,
+        "gps_id": 353976014245439,
+        "lng": 36.32568,
+        "lat": 49.99775,
+        "speed": 32,
+        "timestamp": 1637853285,
+        "bearing": 275,
+        "odometr": 405234
+      }
+    },
+    {
+      "speed": 16,
+      "bort_number": 3206,
+      "data": {
+        "type": "trol",
+        "number": "24",
+        "description": "602-й микрорайон - м.\"Барабашова\"-пос.",
+        "length": 4.42999982833862,
+        "bort_number": 3206,
+        "handicapped": true,
+        "gps_id": 353976013849595,
+        "lng": 36.30799,
+        "lat": 50.00185,
+        "speed": 16,
+        "timestamp": 1637853242,
+        "bearing": 304,
+        "odometr": 289018
+      }
+    },
+    {
+      "speed": 0,
+      "bort_number": 3205,
+      "data": {
+        "type": "trol",
+        "number": "24",
+        "description": "602-й микрорайон - м.\"Барабашова\"-пос.",
+        "length": 4.42999982833862,
+        "bort_number": 3205,
+        "handicapped": true,
+        "gps_id": 353976014321255,
+        "lng": 36.3517,
+        "lat": 49.99621,
+        "speed": 0,
+        "timestamp": 1637853234,
+        "bearing": 309,
+        "odometr": 302604
+      }
+    },
+    {
+      "speed": 10,
+      "bort_number": 3207,
+      "data": {
+        "type": "trol",
+        "number": "24",
+        "description": "602-й микрорайон - м.\"Барабашова\"-пос.",
+        "length": 4.42999982833862,
+        "bort_number": 3207,
+        "handicapped": true,
+        "gps_id": 353976014322329,
+        "lng": 36.35998,
+        "lat": 49.99229,
+        "speed": 10,
+        "timestamp": 1637853213,
+        "bearing": 324,
+        "odometr": 46591
+      }
+    }
+  ],
+  [
+    {
+      "speed": 0,
+      "bort_number": 3211,
+      "data": {
+        "type": "trol",
+        "number": "24",
+        "description": "602-й микрорайон - м.\"Барабашова\"-пос.",
+        "length": 4.42999982833862,
+        "bort_number": 3211,
+        "handicapped": true,
+        "gps_id": 354330030978277,
+        "lng": 36.30397,
+        "lat": 50.00229,
+        "speed": 0,
+        "timestamp": 1637853241,
+        "bearing": 0,
+        "odometr": 32226
+      }
+    },
+    {
+      "speed": 0,
+      "bort_number": 3209,
+      "data": {
+        "type": "trol",
+        "number": "24",
+        "description": "602-й микрорайон - м.\"Барабашова\"-пос.",
+        "length": 4.42999982833862,
+        "bort_number": 3209,
+        "handicapped": true,
+        "gps_id": 353976013852714,
+        "lng": 36.30448,
+        "lat": 50.00193,
+        "speed": 0,
+        "timestamp": 1637853214,
+        "bearing": 21,
+        "odometr": 392249
+      }
+    },
+    {
+      "speed": 6,
+      "bort_number": 3222,
+      "data": {
+        "type": "trol",
+        "number": "24",
+        "description": "602-й микрорайон - м.\"Барабашова\"-пос.",
+        "length": 4.42999982833862,
+        "bort_number": 3222,
+        "handicapped": true,
+        "gps_id": 359632104967705,
+        "lng": 36.32256,
+        "lat": 49.99788,
+        "speed": 6,
+        "timestamp": 1637853328,
+        "bearing": 93,
+        "odometr": 109083
+      }
+    },
+    {
+      "speed": 30,
+      "bort_number": 3224,
+      "data": {
+        "type": "trol",
+        "number": "24",
+        "description": "602-й микрорайон - м.\"Барабашова\"-пос.",
+        "length": 4.42999982833862,
+        "bort_number": 3224,
+        "handicapped": true,
+        "gps_id": 353976014244226,
+        "lng": 36.3435,
+        "lat": 49.99649,
+        "speed": 30,
+        "timestamp": 1637853351,
+        "bearing": 96,
+        "odometr": 320601
+      }
+    },
+    {
+      "speed": 20,
+      "bort_number": 3214,
+      "data": {
+        "type": "trol",
+        "number": "24",
+        "description": "602-й микрорайон - м.\"Барабашова\"-пос.",
+        "length": 4.42999982833862,
+        "bort_number": 3214,
+        "handicapped": true,
+        "gps_id": 353976014322493,
+        "lng": 36.3279,
+        "lat": 49.99757,
+        "speed": 20,
+        "timestamp": 1637853348,
+        "bearing": 96,
+        "odometr": 360160
+      }
+    },
+    {
+      "speed": 16,
+      "bort_number": 3225,
+      "data": {
+        "type": "trol",
+        "number": "24",
+        "description": "602-й микрорайон - м.\"Барабашова\"-пос.",
+        "length": 4.42999982833862,
+        "bort_number": 3225,
+        "handicapped": true,
+        "gps_id": 353976014321545,
+        "lng": 36.3596,
+        "lat": 49.99212,
+        "speed": 16,
+        "timestamp": 1637853273,
+        "bearing": 168,
+        "odometr": 405711
+      }
+    },
+    {
+      "speed": 8,
+      "bort_number": 3206,
+      "data": {
+        "type": "trol",
+        "number": "24",
+        "description": "602-й микрорайон - м.\"Барабашова\"-пос.",
+        "length": 4.42999982833862,
+        "bort_number": 3206,
+        "handicapped": true,
+        "gps_id": 353976013849595,
+        "lng": 36.3043,
+        "lat": 50.0024,
+        "speed": 8,
+        "timestamp": 1637853333,
+        "bearing": 266,
+        "odometr": 289018
+      }
+    },
+    {
+      "speed": 31,
+      "bort_number": 3215,
+      "data": {
+        "type": "trol",
+        "number": "24",
+        "description": "602-й микрорайон - м.\"Барабашова\"-пос.",
+        "length": 4.42999982833862,
+        "bort_number": 3215,
+        "handicapped": true,
+        "gps_id": 353976014245439,
+        "lng": 36.31808,
+        "lat": 49.99826,
+        "speed": 31,
+        "timestamp": 1637853342,
+        "bearing": 276,
+        "odometr": 405235
+      }
+    },
+    {
+      "speed": 34,
+      "bort_number": 3202,
+      "data": {
+        "type": "trol",
+        "number": "24",
+        "description": "602-й микрорайон - м.\"Барабашова\"-пос.",
+        "length": 4.42999982833862,
+        "bort_number": 3202,
+        "handicapped": true,
+        "gps_id": 353976014321339,
+        "lng": 36.33421,
+        "lat": 49.99712,
+        "speed": 34,
+        "timestamp": 1637853347,
+        "bearing": 277,
+        "odometr": 271713
+      }
+    },
+    {
+      "speed": 0,
+      "bort_number": 3205,
+      "data": {
+        "type": "trol",
+        "number": "24",
+        "description": "602-й микрорайон - м.\"Барабашова\"-пос.",
+        "length": 4.42999982833862,
+        "bort_number": 3205,
+        "handicapped": true,
+        "gps_id": 353976014321255,
+        "lng": 36.3517,
+        "lat": 49.99621,
+        "speed": 0,
+        "timestamp": 1637853234,
+        "bearing": 309,
+        "odometr": 302604
+      }
+    },
+    {
+      "speed": 32,
+      "bort_number": 3207,
+      "data": {
+        "type": "trol",
+        "number": "24",
+        "description": "602-й микрорайон - м.\"Барабашова\"-пос.",
+        "length": 4.42999982833862,
+        "bort_number": 3207,
+        "handicapped": true,
+        "gps_id": 353976014322329,
+        "lng": 36.35757,
+        "lat": 49.99442,
+        "speed": 32,
+        "timestamp": 1637853347,
+        "bearing": 311,
+        "odometr": 46591
+      }
+    }
+  ]
+]
