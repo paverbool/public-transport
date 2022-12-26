@@ -1,3 +1,10 @@
+import {Grid, Typography} from "@mui/material";
+import React from "react";
+
 export const Home = () => {
-    return <h1>Home Home Home Home Home Home Home Home Home Home Home Home Home Home Home Home Home Home Home Home Home Home Home Home Home Home</h1>
+    return <Grid container justifyContent={'center'} alignContent={'center'} style={{height: '100vh'}}>
+        <Grid item>
+            <Typography variant={'h1'}>Харків для Людей</Typography>
+        </Grid>
+    </Grid>
 }

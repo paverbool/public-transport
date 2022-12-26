@@ -1,9 +1,13 @@
 import * as React from 'react';
-import Checkbox from '@mui/material/Checkbox';
+import {useState} from 'react';
 import Box from "@mui/material/Box";
-import {Divider, FormControlLabel, TextField} from "@mui/material";
+import {Divider, TextField} from "@mui/material";
 import {MetaRawData} from "../types";
 import {CheckedRoutes} from "../RoutesMap";
+import CloseIcon from '@mui/icons-material/Close';
+import RouteIcon from '@mui/icons-material/Route';
+import IconButton from "@mui/material/IconButton";
+import {RoutesNavRow} from "./RoutesNavRow";
 
 interface Props {
     routes: {
@@ -14,6 +18,7 @@ interface Props {
     setChecked: (checked: CheckedRoutes) => void
 }
 
+
 export default function RoutesNav({checked, setChecked, routes}: Props) {
 
     const handleChangeRoot = (event: React.ChangeEvent<HTMLInputElement>) => {
@@ -23,7 +28,6 @@ export default function RoutesNav({checked, setChecked, routes}: Props) {
             [transport]: {
                 checked: event.target.checked,
                 indeterminate: false,
-                // children: routes.find(x => x.transport === event.target.name)!.routes
                 children: Object.keys(checked[transport]!.children)
                     .reduce((acc, k) => ({
                         ...acc,
@@ -49,68 +53,73 @@ export default function RoutesNav({checked, setChecked, routes}: Props) {
             },
         });
     };
-    return (
-        <Box sx={(theme) => ({
-            maxWidth: 360,
-            width: 360,
-            position: 'fixed',
-            zIndex: 999,
-            right: theme.spacing(1),
-            top: theme.spacing(1),
-            bgcolor: 'background.paper',
-        })}>
-            <Box sx={(theme) => ({
-                padding: theme.spacing()
-            })}>
-                <TextField size={'small'} label="Маршрут" variant="outlined"/>
-            </Box>
-            <Divider/>
-            <Box sx={theme => ({
-                width: '100%',
-                maxWidth: 360,
-                bgcolor: 'background.paper',
-                position: 'relative',
-                overflow: 'auto',
-                maxHeight: `calc(100vh - ${theme.spacing(12)})`,
-                padding: 2,
-            })}>
-                {
-                    routes.map(({transport, routes}, ) =>
-                        <React.Fragment key={transport}>
-                            <FormControlLabel
-                                label={transport}
-                                control={
-                                    <Checkbox
-                                        name={transport}
-                                        checked={checked[transport].checked}
-                                        indeterminate={checked[transport].indeterminate}
-                                        onChange={handleChangeRoot}
-                                    />
-                                }
-                            />
-                            <Box sx={{
-                                display: 'flex',
-                                flexDirection: 'column',
-                                ml: 3,
-                            }}>
-                                {
-                                    routes.map((v) =>
-                                        <FormControlLabel
-                                            key={v.ri}
-                                            label={v.rn}
-                                            name={`${transport}%${v.ri}`}
-                                            control={<Checkbox
-                                                size={'small'}
-                                                checked={checked[transport].children[v.ri]}
-                                                onChange={handleChange}
-                                            />}
-                                        />)
-                                }
-                            </Box>
-                        </React.Fragment>)
-                }
+    const [opened, setOpened] = useState(false);
+    const [query, setQuery] = useState('');
 
+    return (
+        <>
+            <IconButton
+                sx={theme => ({
+                    position: 'fixed',
+                    right: theme.spacing(2),
+                    top: theme.spacing(2),
+                    zIndex: theme.zIndex.drawer
+                })}
+                size="medium"
+                onClick={() => setOpened(!opened)}>
+                {
+                    opened ?
+                        <CloseIcon fontSize="inherit"/> :
+                        <RouteIcon fontSize="inherit"/>
+                }
+            </IconButton>
+            <Box sx={(theme) => ({
+                maxWidth: 280,
+                width: 280,
+                position: 'fixed',
+                zIndex: 999,
+                right: theme.spacing(1),
+                top: theme.spacing(1),
+                bgcolor: 'background.paper',
+                visibility: opened ? 'visibility' : 'hidden',
+            })}>
+                <Box sx={(theme) => ({
+                    padding: theme.spacing(),
+                    maxWidth: 236,
+                })}>
+                    <TextField
+                        size={'small'}
+                        onChange={(ev) => {
+                            setQuery(ev.target.value.toLowerCase())
+                        }}
+                        value={query}
+                        label="Маршрут" variant="outlined"/>
+                </Box>
+                <Divider/>
+                <Box sx={theme => ({
+                    width: '100%',
+                    maxWidth: 280,
+                    bgcolor: 'background.paper',
+                    position: 'relative',
+                    overflow: 'auto',
+                    maxHeight: `calc(100vh - ${theme.spacing(12)})`,
+                    padding: 2,
+                })}>
+                    {
+                        routes.map(({transport, routes},) =>
+                            <RoutesNavRow
+                                key={transport}
+                                transport={transport}
+                                query={query}
+                                checked={checked}
+                                onChangeRoot={handleChangeRoot}
+                                onChange={handleChange}
+                                metaRawData={routes}
+                            />
+                        )
+                    }
+                </Box>
             </Box>
-        </Box>
+        </>
     );
 }

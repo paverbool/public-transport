@@ -1,22 +1,16 @@
 import React from 'react';
-import {GeoJSON, LayerGroup, LayersControl, MapContainer, TileLayer} from 'react-leaflet'
-import RAW_DATA from './ROUTES_DATA.json'
+import {LayersControl, MapContainer} from 'react-leaflet'
 import {RoutesNetwork} from "./components/RoutesNetwork";
 import type {RawDataItem, RouteData, RouteRawData} from "./types";
-import RoutesNav from "./components/RoutesNav";
 import {MetaRawData} from "./types";
-import {CRS, Layer, PathOptions, StyleFunction} from "leaflet";
-
-import density20_30_50_x from './data/--_20-30-50.json'
-import densitySub from './data/Дачи.json'
-import densityPrivateProp from './data/Частный+сектор.json'
-import density2_3 from './data/2-3+этажа.json'
-import density5__60_70_x from './data/5+эт+60-70+х+годов.json'
-import densityCenter from './data/Центр.json'
-import density5_9_12 from './data/5-9-12.json'
-import density9_16 from './data/9-16+эт.json'
-import * as geojson from "geojson";
-
+import RoutesNav from "./components/RoutesNav";
+import {PathOptions} from "leaflet";
+import {useQuery} from "react-query";
+import {routesAPI} from "../../API/routes";
+import {Watermark} from "./components/Watermark";
+import {Loading} from "./components/Loading";
+import {TileLayers} from "./components/TileLayers";
+import {DensityLayers} from "./components/DensityLayers";
 
 function getRouteData(data: RouteRawData) {
     return `${data.points.forward} ${data.points.backward}`.split(' ').map(x => {
@@ -45,49 +39,11 @@ function prepareData(rawData: RawDataItem[], options: PathOptions = {color: 'bla
         routePath: getRouteData(x.route),
         stops: getStops(x.route),
         color: options.color || 'black',
-        routePathOptions: {color: 'black', weight: 1, ...options},
+        routePathOptions: {color: 'black', weight: 0.3, ...options},
     }))
 }
 
-const TRAM_DATA = prepareData(RAW_DATA['Трамвай'], {color: 'red'})
-const BUS_DATA = prepareData(RAW_DATA['Автобус'],)
-const TROL_DATA = prepareData(RAW_DATA['Тролейбус'], {color: 'blue'})
-const METRO_DATA = prepareData(RAW_DATA['Метро'], {color: 'green'})
-const MINIBUS_DATA = prepareData(RAW_DATA['Маршрутка'])
-const OUTCITYBUS_DATA = prepareData(RAW_DATA['Приміський'])
-
-const ROUTES_FOR_MENU: { routes: MetaRawData[]; transport: string }[] =
-    Object.entries(RAW_DATA).map(([k, v]) => {
-        return {
-            transport: k,
-            routes: v.map(x => x.meta)
-        }
-    });
-
-const d = TRAM_DATA.reduce((sumP, c) => {
-    return sumP + c.routePath.reduce((sum, current, i, list) => {
-        const next = list[i + 1]
-        if (!next) return sum
-        return sum + CRS.Earth.distance(current, next)
-    }, 0);
-}, 0)
-
-
-// const t = CRS.Earth.distance(routesData[0].routePath[0], routesDatCRS.Earth.distance(prev, current)a[0].routePath[2])
-console.log(d);
-
-
-function getRandomColor() {
-    var letters = '0123456789ABCDEF';
-    var color = '#';
-    for (var i = 0; i < 6; i++) {
-        color += letters[Math.floor(Math.random() * 16)];
-    }
-    return color;
-}
-
 const position = {lat: 49.9787334, lng: 36.2564556}
-
 
 export type CheckedRoute = {
     checked: boolean
@@ -96,60 +52,73 @@ export type CheckedRoute = {
 };
 export type CheckedRoutes = Record<string, CheckedRoute>;
 
-function getPathOptions(color: string) {
-    return {
-        color,
-        fillOpacity: 0.7,
-        stroke: false
-    };
+type Keys = 'Автобус' | "Маршрутка" | 'Метро' | 'Приміський' | 'Трамвай' | 'Тролейбус';
+const order: Record<Keys, number> = {
+    'Метро': 1,
+    'Трамвай': 2,
+    'Тролейбус': 3,
+    'Автобус': 4,
+    'Приміський': 5,
+    'Маршрутка': 6,
 }
-
-const onEachFeature = (feature: geojson.Feature<geojson.GeometryObject, any>, layer: Layer) => {
-    layer.bindTooltip(feature.properties.name)
-};
-
 export const RoutesMap = () => {
-    const [checked, setChecked] = React.useState<CheckedRoutes>(ROUTES_FOR_MENU.reduce((acc, v) => ({
-        ...acc,
-        [v.transport]: {
-            checked: false,
-            indeterminate: false,
-            children: v.routes
-                .reduce((acc, v) => ({
+    const rawData = useQuery('routes', routesAPI, {
+        refetchOnWindowFocus: false,
+        onSuccess: data => {
+            setChecked(data!.ROUTES_FOR_MENU
+                .reduce((acc: any, v: any) => ({
                     ...acc,
-                    [v.ri]: false
-                }), {})
+                    [v.transport]: {
+                        checked: false,
+                        indeterminate: false,
+                        children: v.routes
+                            .reduce((acc: any, v: any) => ({
+                                ...acc,
+                                [v.ri]: false
+                            }), {})
 
-        }
-    }), {}));
+                    }
+                }), {}))
+        },
+        select: RAW_DATA => ({
+            ROUTES_FOR_MENU: Object.entries(RAW_DATA)
+                .sort((a, b) => {
+                    return (order[a[0] as Keys] || 0) - (order[b[0] as Keys] || 0)
+                })
+                .map(([k, v]: any) => ({
+                    transport: k,
+                    routes: v.map((x: any) => x.meta)
+                })) as { routes: MetaRawData[]; transport: string }[],
+            METRO_DATA: prepareData(RAW_DATA['Метро'], {color: 'green'}),
+            TRAM_DATA: prepareData(RAW_DATA['Трамвай'], {color: 'red'}),
+            TROL_DATA: prepareData(RAW_DATA['Тролейбус'], {color: 'blue'}),
+            BUS_DATA: prepareData(RAW_DATA['Автобус'],),
+            MINIBUS_DATA: prepareData(RAW_DATA['Маршрутка']),
+            OUTCITYBUS_DATA: prepareData(RAW_DATA['Приміський']),
+        })
+    });
 
+    const [checked, setChecked] = React.useState<CheckedRoutes>({});
+
+    if (rawData.isLoading) return <Loading/>;
 
     return <>
-        <RoutesNav checked={checked} setChecked={setChecked} routes={ROUTES_FOR_MENU}/>
+        <RoutesNav checked={checked} setChecked={setChecked} routes={rawData.data!.ROUTES_FOR_MENU}/>
         <MapContainer center={position} zoom={13} style={{height: '100vh'}}>
-            <TileLayer
-                attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-                // url="https://{s}.basemaps.cartocdn.com/light_nolabels/{z}/{x}/{y}.png"
-                // url="https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png"
-                url="https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png"
-                // url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-            />
 
-            <GeoJSON data={densitySub as any} pathOptions={getPathOptions('#00e7cc')} onEachFeature={onEachFeature}/>
-            <GeoJSON data={densityPrivateProp as any} pathOptions={getPathOptions('#00e77f')} onEachFeature={onEachFeature}/>
-            <GeoJSON data={density2_3 as any} pathOptions={getPathOptions('#00bde7')} onEachFeature={onEachFeature}/>
-            <GeoJSON data={densityCenter as any} pathOptions={getPathOptions('#1f00e7')} onEachFeature={onEachFeature}/>
-            <GeoJSON data={density20_30_50_x as any} pathOptions={getPathOptions('#fd680c')} onEachFeature={onEachFeature}/>
-            <GeoJSON data={density5__60_70_x as any} pathOptions={getPathOptions('#c800e7')} onEachFeature={onEachFeature}/>
-            <GeoJSON data={density5_9_12 as any} pathOptions={getPathOptions('#e70083')} onEachFeature={onEachFeature}/>
-            <GeoJSON data={density9_16 as any} pathOptions={getPathOptions('#e70000')} onEachFeature={onEachFeature}/>
-
-            <RoutesNetwork radius={1000} checked={checked['Метро']} routesData={METRO_DATA} reach={true}/>
-            <RoutesNetwork routesData={TRAM_DATA} checked={checked['Трамвай']}/>
-            <RoutesNetwork routesData={TROL_DATA} checked={checked['Тролейбус']}/>
-            <RoutesNetwork routesData={BUS_DATA} checked={checked['Автобус']}/>
-            <RoutesNetwork routesData={MINIBUS_DATA} checked={checked['Маршрутка']}/>
-            <RoutesNetwork routesData={OUTCITYBUS_DATA} checked={checked['Приміський автобус']}/>
+            <LayersControl position="topleft">
+                <TileLayers/>
+                <DensityLayers/>
+            </LayersControl>
+            <RoutesNetwork transport={'Метро'} checked={checked['Метро']} routesData={rawData.data!.METRO_DATA}/>
+            <RoutesNetwork transport={'Трамвай'} checked={checked['Трамвай']} routesData={rawData.data!.TRAM_DATA}/>
+            <RoutesNetwork transport={'Тролейбус'} checked={checked['Тролейбус']} routesData={rawData.data!.TROL_DATA}/>
+            <RoutesNetwork transport={'Автобус'} checked={checked['Автобус']} routesData={rawData.data!.BUS_DATA}/>
+            <RoutesNetwork transport={'Маршрутка'} checked={checked['Маршрутка']}
+                           routesData={rawData.data!.MINIBUS_DATA}/>
+            <RoutesNetwork transport={'Приміський автобус'} checked={checked['Приміський автобус']}
+                           routesData={rawData.data!.OUTCITYBUS_DATA}/>
+            <Watermark/>
         </MapContainer>
     </>
 }

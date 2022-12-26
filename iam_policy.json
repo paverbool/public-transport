@@ -1,0 +1,15 @@
+{
+  "Version": "2022-12-27",
+  "Statement": [
+    {
+      "Effect": "Allow",
+      "Action":   [ "dynamodb:PutItem" ],
+      "Resource": [ "*" ]
+    },
+    {
+      "Effect": "Allow",
+      "Action":   [ "sns:Publish" ],
+      "Resource": [ "*" ]
+    }
+  ]
+}

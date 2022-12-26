@@ -56,7 +56,7 @@ export const Layout: React.FC<PropsWithChildren> = ({children}) => {
                 onKeyDown={() => setOpen(false)}
             >
                 <List>
-                    <CustomLink to="/" icon={<InboxIcon/>} text={'Главная'}/>
+                    <CustomLink to="/" icon={<InboxIcon/>} text={'Головна'}/>
                     <CustomLink to="/routes" icon={<InboxIcon/>} text={'Маршрути'}/>
                 </List>
             </Box>
