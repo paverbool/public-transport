@@ -5,7 +5,7 @@ import {CheckedRoute} from "../RoutesMap";
 import {useQuery} from "react-query";
 import {stopsIsochronesAPI} from "../../../API/stopsSsochronesAPI";
 
-const heavy_process = new Worker( /* webpackChunkName: "foo-worker" */  new URL('./heavy_process', import.meta.url));
+const heavy_process = new Worker( /* webpackChunkName: "union-worker" */  new URL('./heavy_process', import.meta.url));
 
 type Props = {
     routesData: RouteData[]
@@ -14,12 +14,7 @@ type Props = {
     checked?: CheckedRoute
     transport: string
 }
-const apiKey = '5b3ce3597851110001cf6248538e30f8d1fa4f5792b17c5d05ffb873';
-// const trr =  L.control.reachability({
-// add settings/options here
-// apiKey: apiKey
-// }).addTo(context.map);
-
+// const apiKey = '5b3ce3597851110001cf6248538e30f8d1fa4f5792b17c5d05ffb873';
 
 export const RoutesNetwork =
     ({routesData, radius = 600, reach = false, checked, transport}: Props) => {
@@ -68,16 +63,9 @@ export const RoutesNetwork =
         useLayoutEffect(() => {
             heavy_process.addEventListener('message', ({data: {result, transport: _transport}}) => {
                 if (transport === _transport) {
-                    console.log('onmessage', _transport, transport, result,);
                     setStopsUnion(result);
                 }
             });
-            // heavy_process.onmessage = ({data: {data, transport: _transport}}) => {
-            //     console.log('onmessage', _transport, transport, data,);
-            //     if (transport === _transport) {
-            //         setStopsUnion(data);
-            //     }
-            // };
         }, []);
 
         useEffect(() => {
@@ -88,7 +76,7 @@ export const RoutesNetwork =
                 ...isochronesData,
                 features: isochronesData.features.filter((iF: any) => routeData.find(r => r.stops.find(s => s.i === iF.properties.id)))
             };
-            console.log(transport);
+            setStopsUnion(null);
             heavy_process.postMessage({
                 data: filteredData,
                 transport

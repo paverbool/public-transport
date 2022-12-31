@@ -1,4 +1,4 @@
-import axios from "axios";
+import {client} from "./client";
 
 interface BuildingsAPIResponse {
     vid: string
@@ -11,6 +11,6 @@ interface BuildingsAPIResponse {
 }
 
 export const buildingsAPI = async () => {
-    const {data} = await axios.get<BuildingsAPIResponse[]>('http://localhost:3004/buildings/0');
+    const {data} = await client.get<BuildingsAPIResponse[]>('buildings/0');
     return data
 }

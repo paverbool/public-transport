@@ -5,13 +5,13 @@ import ISOCHRONES_DATA from './store/isochrones-metro.json';
 import cors from 'cors';
 import cluster from 'cluster';
 import AWS from 'aws-sdk';
-import bodyParser from 'body-parser';
+import path from "path";
 
 
 // Include the cluster module
 
 // Code to run if we're in the master process
-if (cluster.isMaster) {
+if (cluster.isPrimary) {
 
     // Count the machine's CPUs
     const cpuCount = require('os').cpus().length;
@@ -45,20 +45,7 @@ if (cluster.isMaster) {
 
     app.use(cors())
 
-
-    app.set('view engine', 'ejs');
-    app.set('views', __dirname + '/views');
-    app.use(bodyParser.urlencoded({extended: false}));
-
-    app.get('/', function (req, res) {
-        res.render('index', {
-            static_path: 'static',
-            theme: process.env.THEME || 'flatly',
-            flask_debug: process.env.FLASK_DEBUG || 'false'
-        });
-    });
-
-    app.post('/signup', function (req, res) {
+    app.post('/api/signup', function (req, res) {
         var item = {
             'email': {'S': req.body.email},
             'name': {'S': req.body.name},
@@ -102,7 +89,7 @@ if (cluster.isMaster) {
 
 
     // Handling '/routes' Request
-    app.get('/routes', (_req, _res) => {
+    app.get('/api/routes', (_req, _res) => {
         const response = {
             Трамвай: DATA['Трамвай'],
             Автобус: DATA['Автобус'],
@@ -115,19 +102,26 @@ if (cluster.isMaster) {
     });
 
 // Handling '/routes' Request
-    app.get('/buildings/:page', async (_req, _res) => {
+    app.get('/api/buildings/:page', async (_req, _res) => {
         const page = Number(_req.params.page);
         // _res.send(DATA_buildings.slice(page * 1000, (page + 1) * 1000));
         // _res.send(DATA_buildings);
     });
 
-    app.get('/spending', async (_req, _res) => {
+    app.get('/api/spending', async (_req, _res) => {
         // _res.send(DATA_buildings.slice(page * 1000, (page + 1) * 1000));
         // _res.send(DATA_buildings);
     });
 
-    app.get('/isochones', async (_req, _res) => {
+    app.get('/api/isochones', async (_req, _res) => {
         _res.send(ISOCHRONES_DATA);
+    });
+
+    console.log(111111111111, __dirname, path.join(__dirname, '../'));
+    app.use(express.static(path.join(__dirname, '../')));
+    app.get('/*', function (req, res) {
+        console.log(22222222222, path.join(__dirname, '../index.html'))
+        res.sendFile(path.join(__dirname, '../index.html'));
     });
 
 

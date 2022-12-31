@@ -1,9 +1,8 @@
-import axios from "axios";
-import * as R from "ramda";
+import {client} from "./client";
 
 export const stopsIsochronesAPI = async () => {
 
-    const {data} = await axios.get('http://localhost:3004/isochones')
+    const {data} = await client.get('isochones')
 
     return data
 

@@ -35,7 +35,6 @@ export const RoutesBuildings = () => {
     //
     //         });
     //
-    //         console.log(123123123123, buildings.toGeoJSON())
     //
     //         // container.addLayer(buildings);
     //

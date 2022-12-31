@@ -1,6 +1,6 @@
-import axios from "axios";
+import {client} from "./client";
 
 export const routesAPI = async () => {
-    const {data} = await axios.get('http://localhost:3004/routes') // todo
+    const {data} = await client.get('routes')
     return data
 }
