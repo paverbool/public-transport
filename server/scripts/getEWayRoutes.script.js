@@ -7878,10 +7878,10 @@ const temp1 = {
     }
 }
 
-/*
 {
+    const city = 'kyiv'
     const routesRequest = ajax({
-        url: `/ajax/ua/kharkiv/routes`,
+        url: `/ajax/ua/${city}/routes`,
         headers: {'X-Requested-With': 'XMLHttpRequest'}
     });
 
@@ -7894,7 +7894,7 @@ const temp1 = {
 
             v.forEach((id) => {
                 const r = ajax({
-                    url: `/ajax/kharkiv/routeScheme/${id}`,
+                    url: `/ajax/${city}/routeScheme/${id}`,
                     headers: {'X-Requested-With': 'XMLHttpRequest'}
                 });
 
@@ -7914,7 +7914,6 @@ const temp1 = {
         });
     }
 }
-*/
 
 // console.log(tran8Data)
 {
@@ -7931,4 +7930,20 @@ const temp1 = {
     console.log(`https://photobuildings.com/api.php?action=get-houses-around&pid=0&n=${n2}&s=${s2}&e=${e2}1&w=${w2}`)
     console.log(`https://photobuildings.com/api.php?action=get-houses-around&pid=0&n=${n3}&s=${s3}&e=${e3}1&w=${w3}`)
     console.log(`https://photobuildings.com/api.php?action=get-houses-around&pid=0&n=${n4}&s=${s4}&e=${e4}1&w=${w4}`)
+}
+
+var RES = [
+    // "Трамвай",
+    // "Швидкісний трамвай",
+    // "Автобус",
+    // "Метро",
+    // "Електричка",
+    // "Маршрутка",
+    "Приміський",
+    // "Потяги",
+    // "Електрички"
+].reduce((acc, k)=>({...acc, [k]: DATA[k]}),{})
+
+{
+
 }

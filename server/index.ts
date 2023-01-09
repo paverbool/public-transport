@@ -1,14 +1,24 @@
 // Import the express in typescript file
 import express from 'express';
-import DATA from './ROUTES_DATA.json';
-import ISOCHRONES_DATA from './store/isochrones-metro.json';
 import cors from 'cors';
 import cluster from 'cluster';
 import AWS from 'aws-sdk';
 import path from "path";
+import {filterIsochronesMapbox, FilterIsochronesMapboxParams} from "./utils/filterIsochrones";
+import fs from "fs";
+import {isochronesUnify} from "./API/isochronesUnify";
 
 
 // Include the cluster module
+
+function parseKeys(keys?: string | null) {
+    try {
+        return keys ? JSON.parse(keys) : null;
+    } catch (er) {
+        console.log(er)
+    }
+    return null
+}
 
 // Code to run if we're in the master process
 if (cluster.isPrimary) {
@@ -44,6 +54,7 @@ if (cluster.isPrimary) {
     const app: express.Application = express();
 
     app.use(cors())
+    app.use(express.json());
 
     app.post('/api/signup', function (req, res) {
         var item = {
@@ -89,19 +100,31 @@ if (cluster.isPrimary) {
 
 
     // Handling '/routes' Request
-    app.get('/api/routes', (_req, _res) => {
-        const response = {
-            Трамвай: DATA['Трамвай'],
-            Автобус: DATA['Автобус'],
-            Тролейбус: DATA['Тролейбус'],
-            Метро: DATA['Метро'],
-            Маршрутка: DATA['Маршрутка'],
-            Приміський: DATA['Приміський'],
-        }
+    app.post<{ city: string; keys: string[] }>('/api/routes', (_req, _res) => {
+        const keys = _req.body?.keys as string[] || ["Трамвай", "Швидкісний трамвай", "Автобус", "Метро", "Електричка", "Маршрутка", "Приміський", "Потяги", "Електрички"]
+        const city = _req.body.city || 'kharkiv'
+        console.log(keys, city)
+        const d = JSON.parse(fs.readFileSync(`./server/store/${city}/ROUTES_DATA.json`, "utf8"));
+
+        const response = keys.reduce((acc, k) => {
+            let values = d[k];
+            if (!values) {
+                try {
+                    values = JSON.parse(fs.readFileSync(`./server/store/${city}/ROUTES_DATA_${k}.json`, "utf8"))[k];
+                } catch (e) {
+                    console.log(e)
+                }
+            }
+            return ({...acc, [k]: values});
+        }, {})
         _res.send(response);
     });
 
-// Handling '/routes' Request
+    app.post('/api/isochrones/unify', async (_req, _res) => {
+        const {ids, city, desiredContour} = _req.body;
+        _res.send(isochronesUnify(ids, city, desiredContour));
+    });
+
     app.get('/api/buildings/:page', async (_req, _res) => {
         const page = Number(_req.params.page);
         // _res.send(DATA_buildings.slice(page * 1000, (page + 1) * 1000));
@@ -113,14 +136,16 @@ if (cluster.isPrimary) {
         // _res.send(DATA_buildings);
     });
 
-    app.get('/api/isochones', async (_req, _res) => {
-        _res.send(ISOCHRONES_DATA);
+    app.post<{ desiredContour: FilterIsochronesMapboxParams, city: string }>('/api/isochones', async (_req, _res) => {
+        const ids = _req.body?.ids || {};
+        const desiredContour = _req.body?.desiredContour || {all: 6, 'Метро': 10};
+        const city = _req.body?.city || 'kharkiv';
+        const resp =  filterIsochronesMapbox(ids, desiredContour, city);
+        _res.send(resp)
     });
 
-    console.log(111111111111, __dirname, path.join(__dirname, '../'));
     app.use(express.static(path.join(__dirname, '../')));
     app.get('/*', function (req, res) {
-        console.log(22222222222, path.join(__dirname, '../index.html'))
         res.sendFile(path.join(__dirname, '../index.html'));
     });
 
@@ -131,6 +156,3 @@ if (cluster.isPrimary) {
         console.log('Server running at http://127.0.0.1:' + port + '/');
     });
 }
-
-// Uncomment to update isochrones
-// getIsochrones();

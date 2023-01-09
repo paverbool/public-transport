@@ -1,6 +1,6 @@
 import fetch from 'cross-fetch';
 import * as R from "ramda";
-import DATA from '../ROUTES_DATA.json';
+import DATA from '../store/kharkiv/ROUTES_DATA.json';
 import fs from "fs";
 import {TransportRoute} from "../types/TransportRoute.interface";
 import {IsochronesResponse} from "../types/IsochronesResponse.interface";

@@ -7,6 +7,7 @@ import {NoMatch} from "./pages/NoMatch";
 import { QueryClientProvider } from 'react-query';
 import {queryClient} from "./API/queryClient";
 import {Budget} from "./pages/Budget";
+import {IncidentsHeatmap} from "./pages/IncidentsHeatmap";
 
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
                     <Route index element={<Home/>}/>
                     <Route path="routes" element={<RoutesMap/>}/>
                     <Route path="budget" element={<Budget/>}/>
+                    <Route path="incidents" element={<IncidentsHeatmap/>}/>
 
                     {/* Using path="*"" means "match anything", so this route
                 acts like a catch-all for URLs that we don't have explicit

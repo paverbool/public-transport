@@ -5,6 +5,7 @@ export type Feature = {
         value: number
         center: number[]
         id?: number | string
+        contour?: number
     }
     geometry: {
         coordinates: number[][][],

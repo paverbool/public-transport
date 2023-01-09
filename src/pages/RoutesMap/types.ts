@@ -27,13 +27,14 @@ export interface RouteRawData {
     }
 }
 
+export type RouteDataStop = { lng: number; i: number; lat: number };
 export type RouteData = {
     number: number;
     id: number;
     color: string
     routePathOptions: { color: string };
     routePath: { lng: number; lat: number }[];
-    stops: { lng: number; i: number; lat: number }[]
+    stops: RouteDataStop[]
     meta: MetaRawData
 };
 
@@ -74,4 +75,13 @@ export interface RawDataItem {
     route: RouteRawData
 }
 
-export type RawData = Record<string, Array<RawDataItem>>
+export type RoutesResponse = Record<string, Array<RawDataItem>>
+
+
+export type CheckedRoute = {
+    checked: boolean
+    indeterminate: boolean
+    children: Record<string, boolean>
+};
+
+export type CheckedRoutes = Record<string, CheckedRoute>;

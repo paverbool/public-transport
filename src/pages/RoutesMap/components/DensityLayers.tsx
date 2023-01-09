@@ -1,4 +1,4 @@
-import {GeoJSON, LayersControl} from "react-leaflet";
+import {GeoJSON, LayerGroup, LayersControl} from "react-leaflet";
 import densitySub from "../data/Дачи.json";
 import {getDensityColor} from "../../../utils/colors";
 import densityPrivateProp from "../data/Частный+сектор.json";
@@ -77,7 +77,7 @@ const rows = [
 
 export const DensityLayers = () => <>
     {
-        rows.map(({name, ...props}) => <LayersControl.Overlay key={name} name={name}>
+        rows.map(({name, ...props}) => <LayersControl.Overlay key={name} name={name} >
             <GeoJSON
                 {...props as any}
                 onEachFeature={onEachFeature}/>

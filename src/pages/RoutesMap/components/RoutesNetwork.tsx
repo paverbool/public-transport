@@ -1,142 +1,87 @@
 import React, {useEffect, useLayoutEffect} from "react";
-import {RouteData} from "../types";
-import {GeoJSON, Polyline} from "react-leaflet";
-import {CheckedRoute} from "../RoutesMap";
-import {useQuery} from "react-query";
+import {CheckedRoute, RouteData} from "../types";
+import {GeoJSON, Pane, Polyline} from "react-leaflet";
+import {useMutation, useQuery} from "react-query";
 import {stopsIsochronesAPI} from "../../../API/stopsSsochronesAPI";
+import {getDensityColor} from "../../../utils/colors";
+import {PathOptions} from "leaflet";
+import {citiesConfig, CitiesKeys} from "../../../contsants/constants";
+import {GeoJsonObject} from "geojson";
 
 const heavy_process = new Worker( /* webpackChunkName: "union-worker" */  new URL('./heavy_process', import.meta.url));
 
 type Props = {
-    routesData: RouteData[]
-    radius?: number
-    reach?: boolean
-    checked?: CheckedRoute
     transport: string
+    routesData?: RouteData[]
+    checked?: CheckedRoute //todo
+    isochrones: GeoJsonObject // todo
 }
-// const apiKey = '5b3ce3597851110001cf6248538e30f8d1fa4f5792b17c5d05ffb873';
 
+
+const defaultPathOptions = {
+    fillColor: '#2f4858',
+    color: '#2f4858',
+    fillOpacity: 0.5,
+    weight: 3,
+    dashArray: '5, 5',
+    dashOffset: '5'
+}
+
+function getPathOptions(d: number) {
+    return {
+        ...defaultPathOptions,
+        fillColor: getDensityColor(d),
+        color: getDensityColor(d),
+    }
+}
+
+const pathOptions: Record<string, PathOptions> = {
+    // 'Метро': getPathOptions(10)
+}
 export const RoutesNetwork =
-    ({routesData, radius = 600, reach = false, checked, transport}: Props) => {
-        const [stopsUnion, setStopsUnion] = React.useState<any>(null);
+    ({routesData, checked, transport, isochrones}: Props) => {
+        // const [stopsUnion, setStopsUnion] = React.useState<any>(null);
 
-        const stopsIsochrones = useQuery('isochrones',
-            () => stopsIsochronesAPI(),
-            {
-                onSuccess: data => {
-                    // setStopsUnion({
-                    //     "type": "FeatureCollection",
-                    //     "features": data
-                    // })
-                    // const container = context.layerContainer || context.map
-                    // const cities = new L.LayerGroup();
-                    // LGeo.fromGeoJson(data, {
-                    //     stroke: false,
-                    //     opacity: 0.9,
-                    //     fillOpacity: 0.1
-                    // })
-                    //     .addTo(cities);
-                    // const t = unify(cities.getLayers());
 
-                    // const stopsIds = R.uniq(routesData.reduce((acc: number[], x) => [...acc, ...x.stops.map(f => f.i)], []));
-                    // const filteredData = {
-                    //     ...data,
-                    //     // features: data.features.filter((x: any) => stopsIds.some(y => y === x.properties.id))
-                    //     features: data.features.filter((x: any) => checked?.children[x.properties.id])
-                    // };
-                    // setStopsUnion(unify(filteredData));
+        // useEffect(() => {
+        // heavy_process.addEventListener('message', ({data: {result, transport: _transport}}) => {
+        // if (transport === _transport) {
+        //     setStopsUnion(result);
+        //     // setAreaData((prevData) => ({ todo
+        //     //     ...prevData,
+        //     //     [_transport]: result
+        //     // }))
+        // }
+        // });
+        // }, [routesData]);
 
-                    // const t = unify(cities.getLayers()).toGeoJSON();
+        // useEffect(() => {
+        // if (!routesData) return;
+        // const isochronesData = stopsIsochrones.data;
+        // if (!isochronesData) return;
+        // const routeData = routesData.filter(r => checked?.children[r.id]);
+        // const filteredData = {
+        //     ...isochronesData,
+        //     features: isochronesData.features.filter((iF: any) => routeData.find(r => r.stops.find(s => s.i === iF.properties.id)))
+        // };
+        // setStopsUnion(null);
 
-                    // setStopsUnion(t.setStyle({
-                    //     fillColor: routesData[0].color || 'black',
-                    //     color: routesData[0].color || 'black',
-                    //     fillOpacity: 0.2,
-                    //     weight: 2,
-                    //     dashArray: '5, 5',
-                    //     dashOffset: '5'
-                    // }));
+        // @ts-ignore
+        // unifiedIsochronesQuery.mutate({data: checked?.children})
 
-                    // container.addLayer(t)
-                }
-            });
-        useLayoutEffect(() => {
-            heavy_process.addEventListener('message', ({data: {result, transport: _transport}}) => {
-                if (transport === _transport) {
-                    setStopsUnion(result);
-                }
-            });
-        }, []);
+        // heavy_process.postMessage({
+        //     data: filteredData,
+        //     transport
+        // });
+        // }, [checked?.children])
+        console.log(isochrones);
 
-        useEffect(() => {
-            const isochronesData = stopsIsochrones.data;
-            if (!isochronesData) return;
-            const routeData = routesData.filter(r => checked?.children[r.id]);
-            const filteredData = {
-                ...isochronesData,
-                features: isochronesData.features.filter((iF: any) => routeData.find(r => r.stops.find(s => s.i === iF.properties.id)))
-            };
-            setStopsUnion(null);
-            heavy_process.postMessage({
-                data: filteredData,
-                transport
-            });
-
-        }, [stopsIsochrones.data, checked?.children])
-
-        React.useEffect(() => {
-            // if (!reach) return () => {
-            // }
-            // const container = context.layerContainer || context.map
-            // const cities = new L.LayerGroup();
-            // if (stopsUnion) container.removeLayer(stopsUnion)
-
-            // const stopsMarkers: [number, number][] = [];
-            // routesData.forEach((xsd) => {
-            //     if (checked && checked?.children[xsd.id]) {
-            //         xsd.stops.forEach(x => {
-            //             stopsMarkers.push([x.lng, x.lat]);
-            //             // LGeo.circle(x, radius, {
-            //             //     stroke: false,
-            //             //     opacity: 0.9,
-            //             //     fillOpacity: 0.1
-            //             // })
-            //             //     .addTo(cities);
-            //         })
-            //     }
-            // });
-            // if (stopsMarkers.length)
-            // queryClient.invalidateQueries({queryKey: ['isochrones']}) //todo
-
-            // const t = unify(cities.getLayers());
-            // const t = unify(cities.getLayers()).toGeoJSON();
-
-            // setStopsUnion(t.setStyle({
-            //     fillColor: routesData[0].color || 'black',
-            //     color: routesData[0].color || 'black',
-            //     fillOpacity: 0.2,
-            //     weight: 2,
-            //     dashArray: '5, 5',
-            //     dashOffset: '5'
-            // }));
-
-            // container.addLayer(t)
-            return () => {
-                // container.removeLayer(cities)
-            }
-        }, [reach, checked]);
-        if (!stopsUnion) return null
+        if (!routesData /*|| !stopsUnion*/ || !isochrones) return null
         return <>
             <GeoJSON
-                data={stopsUnion as any}
-                pathOptions={{
-                    fillColor: '#ссс',
-                    color: 'gray',
-                    fillOpacity: 0.4,
-                    weight: 1,
-                    dashArray: '5, 5',
-                    dashOffset: '5'
-                }}/>
+                data={isochrones}
+                pathOptions={pathOptions?.[transport] || defaultPathOptions}
+            />
             {
                 routesData.map(x =>
                     checked?.children[x.id] ?
@@ -145,13 +90,3 @@ export const RoutesNetwork =
             }</>
     };
 
-// function unify(data: FeatureCollection<Polygon>) {
-//     if (!data.features?.[0]?.geometry?.coordinates) return
-//     const poly1 = polygon(data.features?.[0]?.geometry?.coordinates);
-//     const unionTemp = data.features.reduce((acc, x) =>
-//         union(
-//             acc as Feature<Polygon>,
-//             polygon(x.geometry.coordinates)
-//         ), union(poly1, poly1)) as any;
-//     return unionTemp;
-// }

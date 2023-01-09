@@ -1,6 +1,5 @@
-import {CheckedRoutes} from "../RoutesMap";
 import * as React from "react";
-import {MetaRawData} from "../types";
+import {CheckedRoutes, MetaRawData} from "../types";
 import {FormControlLabel} from "@mui/material";
 import Checkbox from "@mui/material/Checkbox";
 import Box from "@mui/material/Box";
@@ -14,10 +13,11 @@ interface Props {
     onChangeRoot: (event: React.ChangeEvent<HTMLInputElement>) => void,
     onChange: (event: React.ChangeEvent<HTMLInputElement>) => void,
     metaRawData: MetaRawData[],
+    hidden?: boolean
 }
 
 export const RoutesNavRow =
-    ({checked, metaRawData, onChange, onChangeRoot, query, transport}: Props) => {
+    ({checked, metaRawData, onChange, onChangeRoot, query, transport, hidden}: Props) => {
         const filter = useCallback((x: MetaRawData) => `${x.rn}`.toLowerCase().includes(query), [query]);
         return <React.Fragment>
             <FormControlLabel
@@ -41,6 +41,7 @@ export const RoutesNavRow =
                         .filter(filter)
                         .map((v) =>
                             <FormControlLabel
+                                className={!checked[transport].children[v.ri] && hidden ? 'hidden' : ''}
                                 key={v.ri}
                                 label={v.rn}
                                 name={`${transport}%${v.ri}`}
